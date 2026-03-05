@@ -9,7 +9,7 @@ app.use(express.json());
 
 const frontend_url=process.env.FRONTEND_URL
 
-app.use(cors({origin:'http://localhost:5173',credentials:true}))
+app.use(cors({origin:`frontend_url`,credentials:true}))
 //to fetch values from .env file
 require('dotenv').config()
 const mongoose = require("mongoose");
